@@ -1,0 +1,142 @@
+.work__filters{
+    display: flex;
+    align-items: center;
+    column-gap: 1.875rem;
+    margin-bottom: 2.5rem;
+}
+
+@media (max-width:780px) {
+  .work {
+     
+    
+      display: block;
+
+  }
+  .work.container.section{
+      margin-left: -7rem;
+  }
+
+  .work__filters{
+    display:inline-flex;
+    align-items: center;
+    column-gap: 0.875rem;
+    margin-bottom: 2.5rem;
+    width: 10rem;
+}
+}
+
+.work__items {
+    cursor: pointer;
+    font-weight: var(--font-bold);
+}
+
+.work__item:hover{
+    color: var(--first-color);
+}
+
+.work__container {
+    grid-template-columns: repeat(3,1fr);
+    gap: 1.875rem;
+}                                                                                                                      
+
+
+.works__mask {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgb(255, 108, 71);
+    border-radius: 1.3rem;
+    transition: .3s;
+    opacity: 0;
+  }
+  .work__img{
+    border-radius: 1.3rem;
+}
+  .work__card:hover .works__mask{
+    opacity: 0.5;
+
+  }
+  .work__container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.875rem;
+  }
+  
+  .work__card {
+    position: relative;
+    
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow);
+  }
+
+  .work__category {
+    color:#fff;
+    background-color: var(--first-color);
+    border-bottom-left-radius: 0.98rem;
+    border-bottom-right-radius: 0.98rem;
+    position: absolute;
+    top: 0;
+    left: 1.5rem;
+    font-size: var(--small-font-size);
+    display: inline-block;
+    padding: 0.19rem 0.625rem;
+    transform: translateX(-40px);
+    margin-left: 2.5rem;
+    transition: 0.3s;
+  }
+
+.work__title{
+    color:#ffffff;
+    font-size: var(--h3-font-size);
+    margin-top: -5rem;
+    padding: 0 1.25rem;
+    position: absolute;
+    top: 9.75rem;
+    transform: translateY(30px);
+    transition: .3s;
+    opacity: 0;
+
+
+
+
+}
+
+.work__button {
+    color: #fff;
+    position: absolute;
+    bottom: 1.5rem;
+    left: 1.5rem;
+    font-size: var(--h3-font-size);
+    display: block;
+    background-color: #ff6600;
+    height: 40px;
+    width: 40px;
+    cursor: pointer;
+    border-radius: 50%;
+    text-align: 42px;
+    transition: .3s;
+    opacity: 0;
+}
+.work__card:hover .work__button{
+    opacity: 0.7;
+}
+
+.work__card:hover .work__title,
+.work__item:hover .work__category{
+    opacity: 1;
+    transform: translateY(0);
+
+}
+#icon__graduation {
+    color: #fff;
+    left: 0.6rem ;
+    top: 0.6rem;
+    position: absolute;
+   
+}
+
+
+  
+  
